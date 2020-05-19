@@ -5,6 +5,9 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  background: #303033 url(http://subtlepatterns.com/patterns/broken_noise.png)
+ }
 
 #text {
   display: block;
@@ -21,10 +24,10 @@
 
 .oscuro {
     background-color: #161615;
-}  
+} 
 
 .oscuro2 {
-  background-color: #393939;
+  background-color: rgb(36, 35, 35);
 } 
 
 img {
@@ -36,9 +39,7 @@ img {
   margin-bottom: 10px;
 }
 
-  /* Old Mauve: #5D2E46 */
-  /* BLANCO: Platinum: #E0E2DB */
-  /* NEGRO: Oxford blue: #131F31 */
+  /* NAVBAR */
 
   .topnav {
     overflow: hidden;
@@ -81,14 +82,12 @@ img {
 .list {
   width: 15%;
   height: auto;
-  color: white;
   font-family: 'Montserrat', 'sans-serif';
   text-decoration: none;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: rgb(223, 90, 90);
   cursor: pointer;
 }
 
@@ -126,36 +125,84 @@ img {
 .button a:active{
   top:5px;
   background-color:rgb(0, 0, 0);
-  
-  -webkit-box-shadow:inset 0 1px 0 rgb(0, 0, 0), inset 0 -2px 0 #d8cc27;
-  -moz-box-shadow:inset 0 1px 0 rgb(0, 0, 0), inset 0 -2px 0 #d8cc27;
-  box-shadow:inset 0 1px 0 rgb(0, 0, 0), inset 0 -2px 0 #d8cc27;
+  -webkit-box-shadow:inset 0 1px 0 rgb(0, 0, 0), inset 0 -2px 0 #a59c23;
+  -moz-box-shadow:inset 0 1px 0 rgb(0, 0, 0), inset 0 -2px 0 #a59c23;
+  box-shadow:inset 0 1px 0 rgb(0, 0, 0), inset 0 -2px 0 #a59c23;
 }
 
 .button a:hover{
-  background-color:rgb(0, 0, 0);
+  background-color:rgb(41, 40, 14);
+  border: 1px solid rgb(245, 241, 18);
 }
 
-@media screen and (min-width: 768px){
-  .list:hover, .list:hover div{
-      background-color: rgb(41, 40, 40);
-  }
-}
+ /* SECCIONES DEL HOME PAGE*/
 
-.burger{
-  display: none;
-  cursor: pointer;
-}
-
-.burger div{
-  width: 35px;
-  height: 4px;
-  background-color: var(--primary-color);
-  margin: 5px;
-  justify-content: center;
-  align-items: center;
+ .nosotros {
+  background-color: rgb(39, 33, 33);
+  border:1px solid #f0a0a0;
+  color: #f0a0a0;
+  margin: 10px 0 20px 0;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 45px;
+  padding-right: 45px;
   border-radius: 10px;
-  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.nosotros:hover {
+  box-shadow: 0 0 16px rgba(231, 56, 56, 0.527); 
+}
+
+.noticiasLatest {
+  background-color: rgb(34, 28, 39);
+  border:1px solid #d6a3ee;
+  color: #d6a3ee;
+  margin: 10px 0 20px 0;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.noticiasLatest:hover {
+  box-shadow: 0 0 16px rgba(177, 26, 214, 0.589); 
+}
+
+.marketLatest {
+  background-color: rgb(46, 45, 36);
+  border:1px solid #f8f7af;
+  color: #f8f7af;
+  margin: 10px 0 20px 0;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.marketLatest:hover {
+  box-shadow: 0 0 16px rgba(241, 208, 15, 0.562); 
+}
+
+.reviewsLatest {
+  background-color: rgb(30, 41, 43);
+  border:1px solid #a9eaec;
+  color: #a9eaec;
+  margin: 10px 0 20px 0;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.reviewsLatest:hover {
+  box-shadow: 0 0 16px rgba(42, 225, 231, 0.527); 
 }
 
 /*RESPONSIVE NAVBAR*/
@@ -164,14 +211,14 @@ img {
       overflow-x: hidden;
   }
   .list {
-      background-color: rgb(202, 12, 12);
+      background-color: rgb(32, 32, 32);
   }
   .nav{
       position: absolute;
       right: 0px;
       height: 100vh;
       top: 28vh;
-      background-color: rgb(202, 50, 202);
+      background-color: rgb(32, 32, 32);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -180,10 +227,16 @@ img {
       transition: transform 0.5s ease-in;
   }
   .list div{
-      background-color: rgb(32, 186, 233);
+      background-color: rgb(32, 32, 32);
       margin-top: 5vh;
   }
 
+  span{
+      display: none;
+  }
+  .nav a{
+      opacity: 0;
+  }
   .burger{
       display: block;
       margin-left: auto;
@@ -216,8 +269,28 @@ img {
   transform: rotate(45deg) translate(-7px, -6px);
 }
 
+/*RESPONSIVENESS BURGER*/
+@media screen and (min-width: 768px){
+  .list:hover, .list:hover div{
+      background-color: rgb(41, 40, 40);
+  }
+}
 
-/* NAVBAR LOGO IMAGE AND TEXT*/
+.burger{
+  display: none;
+  cursor: pointer;
+}
+
+.burger div{
+  width: 35px;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
 
 /*MAIN FEED SECTION*/
 main {
@@ -296,8 +369,6 @@ i{
   background-color: inherit;
 }
 
-
-
 .info {
   flex-grow: 2;
   display: flex;
@@ -330,6 +401,7 @@ i{
 
 
 /*PROFILE SECTION RIGHT PANE*/
+
 .right-pane {
   border: 1px solid yellowgreen;
   width: 32%;
@@ -405,73 +477,6 @@ footer {
   width: 100%;
 }
 
-.nosotros {
-  background-color: rgb(39, 33, 33);
-  border:1px solid #f0a0a0;
-  color: #f0a0a0;
-  margin: 10px 0 20px 0;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  padding-left: 45px;
-  padding-right: 45px;
-  border-radius: 10px;
-  width: 100%;
-}
-
-.nosotros:hover {
-  box-shadow: 0 0 11px rgba(231, 56, 56, 0.527); 
-}
-
-.noticiasLatest {
-  background-color: rgb(34, 28, 39);
-  border:1px solid #d6a3ee;
-  color: #d6a3ee;
-  margin: 10px 0 20px 0;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  padding-left: 45px;
-  padding-right: 45px;
-  border-radius: 10px;
-  width: 100%;
-}
-
-.noticiasLatest:hover {
-  box-shadow: 0 0 11px rgba(177, 26, 214, 0.589); 
-}
-
-.marketLatest {
-  background-color: rgb(46, 45, 36);
-  border:1px solid #f8f7af;
-  color: #f8f7af;
-  margin: 10px 0 20px 0;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  padding-left: 45px;
-  padding-right: 45px;
-  border-radius: 10px;
-  width: 100%;
-}
-
-.marketLatest:hover {
-  box-shadow: 0 0 11px rgba(241, 208, 15, 0.562); 
-}
-
-.reviewsLatest {
-  background-color: rgb(30, 41, 43);
-  border:1px solid #a9eaec;
-  color: #a9eaec;
-  margin: 10px 0 20px 0;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  padding-left: 45px;
-  padding-right: 45px;
-  border-radius: 10px;
-  width: 100%;
-}
-
-.reviewsLatest:hover {
-  box-shadow: 0 0 11px rgba(42, 225, 231, 0.527); 
-}
 
 .fade
 {
