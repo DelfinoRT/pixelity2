@@ -1545,7 +1545,7 @@ a {
   .video {
     background: rgb(32, 32, 32);
     padding: 10px;
-    width: 23%; /* Thumbnails 4 across */
+    width: 31%; /* Thumbnails 4 across */
 	margin: 1%;
 	color: rgb(228, 235, 135);
 	border-radius: 7px;
@@ -1577,7 +1577,7 @@ a {
 
   /* Media Queries - This is the responsive grid. */
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1400px) {
     .video {
       width: 31.333%; /* Thumbnails 3 across */
     }
@@ -1589,7 +1589,7 @@ a {
     }
   }
 
-  @media (max-width: 360px) {
+  @media (max-width: 560px) {
     .video {
       display: block;
       width: 96%; /* Single column view. */
