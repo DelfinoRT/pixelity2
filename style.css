@@ -1533,3 +1533,78 @@ a {
   .columnas-titulo {
 	  background-color: rgb(24, 22, 9) !important;
   }
+
+  /* Video Gallery for Reviews */
+  /* First make sure the video thumbnail images are responsive. */
+
+  .video img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .video {
+    background: rgb(32, 32, 32);
+    padding: 10px;
+    width: 23%; /* Thumbnails 4 across */
+	margin: 1%;
+	color: rgb(228, 235, 135);
+	border-radius: 7px;
+	float: left;
+  }
+
+  .video:hover {
+	background: rgb(52, 53, 29);
+  }
+
+   /* 
+   These keep the height of each video thumbnail consistent between YouTube and Vimeo.
+   Each can have thumbnail sizes that vary by 1px and are likely break your layout. 
+   */
+
+  .video figure {
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+
+    .video figure a {
+      display: block;
+      margin: 0;
+      padding: 0;
+      border: none;
+      line-height: 0;
+    }
+  }
+
+  /* Media Queries - This is the responsive grid. */
+
+  @media (max-width: 1024px) {
+    .video {
+      width: 31.333%; /* Thumbnails 3 across */
+    }
+  }
+
+  @media (max-width: 600px) {
+    .video {
+      width: 48%; /* Thumbnails 2 across */
+    }
+  }
+
+  @media (max-width: 360px) {
+    .video {
+      display: block;
+      width: 96%; /* Single column view. */
+      margin: 2%; /* The smaller the screen, the smaller the percentage actually is. */
+      float: none;
+    }
+  }
+
+  /* These are my preferred rollover styles. */
+
+  .video img {
+    width: 100%;
+    opacity: 1;
+  }
+
+  .video img:hover, .video img:active, .video img:focus {
+    opacity: 0.75;
+  }
