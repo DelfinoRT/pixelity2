@@ -54,6 +54,9 @@ section {
 	display: block
 }
 
+header {
+	z-index:100 !important;
+}
 summary {
 	display: list-item
 }
@@ -1608,3 +1611,19 @@ a {
   .video img:hover, .video img:active, .video img:focus {
     opacity: 0.75;
   }
+
+  .download {
+	background-color: rgb(228, 235, 135);
+	border: none;
+	color: rgb(0, 0, 0)7, 17, 17);
+	padding: 12px 30px;
+	cursor: pointer;
+	font-size: 20px;
+	width: 15%;
+	margin: 5px;
+  }
+  
+  .download:hover {
+	background-color: rgb(198, 207, 70);
+	}
+
