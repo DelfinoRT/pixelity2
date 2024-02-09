@@ -66,11 +66,6 @@
     <p class="p1">Deseamos que lo que nuestra plataforma te ofrece sea de tu agrado y estamos siempre dispuestos a analizar nuevas propuestas de contenido, agradecemos cualquier comentario o sugerencia que tengas. <br> No dudes en <a href="url">contactarnos</a>!</p>
 
   </div>
-  
-  <!-- Instagram Feed -->
-  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-  <div class="elfsight-app-420d5eb2-06a1-4ebf-abfd-e2f6963bc73d"></div>
-
 
 <!-- End page content -->
 </div>
@@ -88,25 +83,22 @@
 </div>
 
 <script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
-
-</body>
-</html>
+  // Script to open and close sidebar
+  function w3_open() {
+    if (document.getElementById("mySidebar").style.display === "block") {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    } else {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  </script>
+  
+  </body>
+  </html>
