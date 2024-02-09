@@ -653,7 +653,7 @@ a {
 	.w3-modal-content {
 		width: 900px
 	}
-	.w3-hide-large {
+	.hideLarge {
 		display: none!important
 	}
 	.hideSmall {
@@ -680,14 +680,17 @@ a {
 	}
 }
 
-.w3-top {
+.responsiveTitle {
 	position: fixed;
 	width: 100%;
 	z-index: 1;
 	top: 0;
+	color:rgb(211, 208, 38)!important;
+	background-color: rgb(32, 32, 9)!important;
+	border-right: 1px solid rgb(245, 241, 18);
 }
 
-.w3-overlay {
+.overlay {
 	position: fixed;
 	display: none;
 	width: 100%;
@@ -696,7 +699,7 @@ a {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.832);
 	z-index: 2
 }
 
@@ -1045,7 +1048,7 @@ a {
 }
 
 
-.w3-topbar {
+.responsiveTitlebar {
 	border-top: 6px solid #ccc!important
 }
 
@@ -1091,12 +1094,6 @@ a {
 
 
 /* Colors */
-
-.w3-green {
-	color:rgb(211, 208, 38)!important;
-	background-color: rgb(32, 32, 9)!important;
-	border-right: 1px solid rgb(245, 241, 18)
-}
 
 
 .w3-hover-green:hover {

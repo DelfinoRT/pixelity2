@@ -24,14 +24,14 @@
   </div>
 </nav>
 
-<!-- Top menu on small screens -->
-<header class="container1 w3-top w3-hide-large w3-green">
+<!-- Top menu only on small screens -->
+<header class="container1 responsiveTitle hideLarge">
   <a href="javascript:void(0)" class="w3-green" onclick="action_open()">☰</a>
   <span>Pixelity GS</span>
 </header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="action_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- Dark overlay effect when opening sidebar on small screens -->
+<div class="overlay hideLarge" onclick="action_close()" style="cursor:pointer" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
@@ -70,15 +70,11 @@
 </div>
 
 <!-- Footer -->
-<div class="w3-footer container1" style="margin-top:75px;padding-right:58px;border-top: 1px solid rgb(235, 215, 42)"><p class="w3-right">&copy; 2020 <strong>Pixelity Gaming Stuff</strong> <br> WebDev by <a href="https://www.linkedin.com/in/delfino-rosales/" title="LinkedIn Delfino" target="_blank" class="w3-hover-opacity">Delfino Rosales</a> & <a href="https://www.linkedin.com/in/oscardavidmendoza/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Oscar Mendoza</a></p>
+<div class="w3-footer container1" style="margin-top:75px;padding-right:58px;border-top: 1px solid rgb(235, 215, 42)"><p class="w3-right">&copy; 2024 <strong>PeriquitosMex</strong> <br> WebDev by <a href="https://www.linkedin.com/in/delfino-rosales/" title="LinkedIn Delfino" target="_blank" class="w3-hover-opacity">Delfino Rosales</a></p>
     <a href="https://www.facebook.com/PixelityGS/">
       <img class="w3-right" alt="Facebook" src="images/facebook-icon.png"
       style="width: 50px; margin: auto; padding-top: 11px; margin-right: 10px;">
    </a>
-   <a href="https://www.instagram.com/pixelitygs/">
-    <img class="w3-right" alt="Instagram" src="images/instagram-icon.png"
-    style="width: 50px; margin: auto; padding-top: 11px; margin-right: 10px;">
- </a>
 </div> 
   <script src="scripts.js"></script>
   </body>
