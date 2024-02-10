@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Sample</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample</title>
+  <!-- External stylesheet for Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <!-- Link to custom stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="hideSmall" id="mySidebar"><br>
+<nav class="hideSmall" id="mySidebar">
+  <br>
   <div class="container1">
     <div class="small-logo">
-      <img src="images/PixelitySmall.png">
+      <!-- Logo image -->
+      <img src="images/pmx-logo-round.png">
     </div>
   </div>
   <div class="navMenu">
+    <!-- Navigation links -->
     <a href="index.html" onclick="action_close()" class="navButton active">Home</a> 
     <a href="reviews.html" onclick="action_close()" class="navButton">Reviews</a> 
     <a href="market.html" onclick="action_close()" class="navButton">Market</a> 
@@ -26,24 +33,27 @@
 
 <!-- Top menu only on small screens -->
 <header class="container1 responsiveTitle hideLarge">
-  <a href="javascript:void(0)" onclick="action_open()">≡</a>
-  <span>Pixelity GS</span>
+  <!-- Button to open sidebar -->
+  <a href="javascript:void(0)" onclick="action_open()" class="hamburguer">≡</a>
+  <span>PeriquitosMex</span>
 </header>
 
 <!-- Dark overlay effect when opening sidebar on small screens -->
 <div class="overlay hideLarge" onclick="action_close()" style="cursor:pointer" id="myOverlay"></div>
 
-<!-- !PAGE CONTENT! -->
+<!-- Main content -->
 <div class="mainContainer">
 
-  <!-- Header -->
-  <div class="container1" style="margin-top:80px" id="showcase">
-    <img src="images/PixelityBanner.png" class="image_full">
-    <img src="images/PixelityBanner2.png"  class="image_mobile">
-    <h1 class="w3-xxxlarge w3-text-green"><b>Quiénes somos?</b></h1>
-    <hr style="width:50px;border:5px solid rgb(235, 215, 42)" class="w3-round">
+  <div class="container1">
+    <!-- Main images and title -->
+    <img src="images/main-pmx-img.png" class="image_full">
+    <img src="images/main-pmx-img2.png"  class="image_mobile">
+    <h1 class="titulo"><b>Quiénes somos?</b></h1>
+    <!-- Horizontal line separator -->
+    <hr style="width:50px;border:5px solid rgb(204, 185, 15)" class="w3-round">
+    <!-- Paragraphs describing the company -->
     <p class="paragraph1">
-      Somos un par de aficionados al mundo gaming con la idea de que los gadgets y accesorios gamers de alta calidad deben ser de facil acceso y a precios razonables para todos.
+      Somos un par de aficionados al mundo gaming con la idea de que los gadgets y accesorios gamers de alta calidad deben ser de fácil acceso y a precios razonables para todos.
     </p>
     <p class="paragraph1">
     Buscamos traer para ustedes una amplia gama de artículos a fin de que Pixelity Gaming Stuff se convierta en tu principal plataforma para adquirirlos y a la vez sirva como un lugar de aprendizaje respecto a varios temas del mundo gaming.
@@ -53,29 +63,30 @@
     </p>
   </div>
 
-  <!-- Services -->
-  <div class="container1" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-green"><b>Qué hacemos?</b></h1>
-    <hr style="width:50px;border:5px solid rgb(235, 215, 42)" class="w3-round">
+  <div class="container1">
+    <!-- Section title -->
+    <h1 class="titulo"><b>Qué hacemos?</b></h1>
+    <!-- Horizontal line separator -->
+    <hr style="width:50px;border:5px solid rgb(204, 185, 15)" class="w3-round">
+    <!-- Paragraphs describing company activities -->
     <p class="paragraph1"><strong>Reviews</strong> - Hacemos video reviews propios de producto y compartimos reviews hechos por otras personas a fin de que aprendas y puedas tomar la mejor decisión al momento de elegir un producto.</p>
-    <p class="paragraph1"><strong>Market</strong>- Buscamos traer para ti lo mejor en tecnologia para gamers como: teclados, switches, keycaps, gaming mouses, y más...</p>
+    <p class="paragraph1"><strong>Market</strong>- Buscamos traer para ti lo mejor en tecnología para gamers como: teclados, switches, keycaps, gaming mouses, y más...</p>
     <p class="paragraph1"><strong>Academy</strong>- Ponemos a tu disposición una creciente cantidad de archivos y documentos sobre productos para ampliar tu conocimiento sobre el tema.</p>
-    <p class="paragraph1"><strong>News</strong>- Las noticias mas imporantes sobre el mundo gaming las podrás consultar con nosotros para mantenerte totalmente actualizado.</p>
+    <p class="paragraph1"><strong>News</strong>- Las noticias más importantes sobre el mundo gaming las podrás consultar con nosotros para mantenerte totalmente actualizado.</p>
     <br>
-    <p class="paragraph1">Deseamos que lo que nuestra plataforma te ofrece sea de tu agrado y estamos siempre dispuestos a analizar nuevas propuestas de contenido, agradecemos cualquier comentario o sugerencia que tengas. <br> No dudes en <a href="url">contactarnos</a>!</p>
-
+    <!-- Additional information and contact link -->
+    <p class="paragraph1">Deseamos que lo que nuestra plataforma te ofrece sea de tu agrado y estamos siempre dispuestos a analizar nuevas propuestas de contenido, agradecemos cualquier comentario o sugerencia que tengas. <br> No dudes en <a href="https://www.facebook.com/groups/PeriquitosMexAC/">contactarnos</a>!</p>
   </div>
 
 <!-- End page content -->
 </div>
 
 <!-- Footer -->
-<div class="w3-footer container1" style="margin-top:75px;padding-right:58px;border-top: 1px solid rgb(235, 215, 42)"><p class="w3-right">&copy; 2024 <strong>PeriquitosMex</strong> <br> WebDev by <a href="https://www.linkedin.com/in/delfino-rosales/" title="LinkedIn Delfino" target="_blank" class="w3-hover-opacity">Delfino Rosales</a></p>
-    <a href="https://www.facebook.com/PixelityGS/">
-      <img class="w3-right" alt="Facebook" src="images/facebook-icon.png"
-      style="width: 50px; margin: auto; padding-top: 11px; margin-right: 10px;">
-   </a>
+<div class="footer container1">
+  <p>&copy; 2024 <strong>PeriquitosMex</strong> <br> WebDev by <a href="https://www.linkedin.com/in/delfino-rosales/" title="LinkedIn Delfino" target="_blank">Delfino Rosales</a></p>
 </div> 
-  <script src="scripts.js"></script>
-  </body>
-  </html>
+
+<!-- Script for sidebar functionality -->
+<script src="scripts.js"></script>
+</body>
+</html>
