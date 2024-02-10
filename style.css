@@ -210,3 +210,19 @@ hr {
         margin-left: 40px;
     }
 }
+
+.logo-group {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+	background-color: #33291300;
+	border-color: #33291300;
+}
+
+.logo-group img {
+	padding: 16px;
+    width: auto;
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 15px;
+    max-width: 150px;    max-height: 120px;
+}
