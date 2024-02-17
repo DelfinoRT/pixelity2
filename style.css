@@ -141,13 +141,12 @@ a {
 
 /* Footer styles */
 .footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: #b1a588;
-    text-align: right;
+    text-align: center;
     padding-top: 50px;
-    padding-right: 58px;
     border-top: 1px solid #69604b;
     color: #4b4332;
 }
@@ -240,6 +239,7 @@ a {
 	width:100%;
 	padding-top:0px;
     padding-bottom: 500px;
+    margin-bottom: 450px;
 }
 
 #form-div {
