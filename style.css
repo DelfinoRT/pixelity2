@@ -255,7 +255,7 @@ a {
 	width:100%;
 	padding-top:0px;
     padding-bottom: 500px;
-    margin-bottom: 450px;
+    margin-bottom: 50px;
 }
 
 #form-div {
@@ -433,3 +433,26 @@ form {
     height: 100px;
   }
 
+  /* Tabla de eventos */
+
+  .event-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .event-table th, .event-table td {
+    border: 1px solid #57551f;
+    padding: 8px;
+  }
+  
+
+  
+  .event-table tr:hover {background-color: #918f4a3d;}
+  
+  .event-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #212008;
+    color: #f5f111;
+  }
