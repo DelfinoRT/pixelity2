@@ -105,7 +105,11 @@ a {
 }
 
 .titulo2 {
-    color: rgb(6, 97, 109);
+    color: #959436;
+}
+
+.titulo2:hover {
+    color: rgb(102, 100, 14);
 }
 
 /* Image container styles */
@@ -216,6 +220,14 @@ a {
     
     .mainContainer {
         margin-left: 40px;
+    }
+
+    .titulocontacto {
+        margin-top: 140px;
+    }
+
+    .tituloformato {
+        margin-top: 140px;
     }
 }
 
