@@ -15,8 +15,3 @@ function action_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
 }
-
-const doc = new jsPDF();
-
-doc.text("Hello world!", 10, 10);
-doc.save("a4.pdf");

@@ -376,3 +376,48 @@ a {
 		padding-right: 3%;
 	}
 }
+
+.ImprimirButton {
+    padding: 5px;
+    color: #3c3c3c;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: #ebe1cb;
+    border-color: rgb(245, 241, 18);
+}
+
+--------------------
+
+form {
+    display: flex;
+    max-width: 1000px; /* Tamaño máximo del formulario */
+  }
+
+  .form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .table-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 48%; /* Ajustar el ancho para que quepan dos tablas en una página A4 */
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+  }
+
